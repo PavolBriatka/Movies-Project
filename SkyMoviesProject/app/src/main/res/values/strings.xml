@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Sky Movies Project</string>
+    <string name="poster_content_description">Movie poster</string>
+    <string name="search_query_hint">Search for title or genre</string>
+    <string name="search_options_text_view">Search for:</string>
+    <string name="title_search_option">Title</string>
+    <string name="genre_search_option">Genre</string>
+    <string name="search_hint">Search for&#8230;</string>
+    <string name="last_item_special_text">the last item</string>
+</resources>

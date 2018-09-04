@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/list_item_basic_dimen"
+        card_view:cardBackgroundColor="@color/colorPrimary"
+        card_view:cardCornerRadius="@dimen/list_item_basic_dimen">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/movie_genre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/fontColor"
+                android:layout_margin="@dimen/list_item_small_dimen"
+                android:paddingEnd="@dimen/medium_dimen"
+                android:paddingTop="@dimen/list_item_small_dimen"
+                android:paddingBottom="@dimen/list_item_small_dimen"
+                android:gravity="end"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/genre_background"
+                tools:text="Genre: Drama "/>
+
+            <TextView
+                android:id="@+id/placeholder_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_dimen"
+                android:layout_marginStart="@dimen/large_dimen"
+                android:layout_marginEnd="@dimen/large_dimen"
+                android:gravity="center"
+                android:layout_alignTop="@id/movie_poster_thumbnail"
+                tools:text="(Movie name)"/>
+
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/movie_poster_thumbnail"
+                android:contentDescription="@string/poster_content_description"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/image_height"
+                android:adjustViewBounds="true"
+                android:layout_centerInParent="true"
+                android:layout_below="@id/movie_genre"
+                android:padding="@dimen/list_item_small_dimen"
+                card_view:riv_corner_radius="@dimen/list_item_basic_dimen"/>
+
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
